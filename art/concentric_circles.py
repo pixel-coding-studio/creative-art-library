@@ -113,8 +113,7 @@ def run(cp: CreativePainter, hues: [],
 
 def default_run(output_folder: str, num_to_generate: int = 25):
     for i in tqdm(range(0, num_to_generate)):
-        # base_seed = random.randint(0, 100000000)
-        base_seed = 44356686
+        base_seed = random.randint(0, 100000000)
         np.random.seed(base_seed)
         p = CreativePainter(2000, 2000, QColor(11, 9, 9, 255))
 
